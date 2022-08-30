@@ -25,6 +25,8 @@
 		5A9B34AA28A8D278001259E2 /* MySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B34A728A8D277001259E2 /* MySceneDelegate.swift */; };
 		5A9B34AB28A8D278001259E2 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5A9B34A828A8D277001259E2 /* Config.xcconfig */; };
 		5A9B34AE28A8D88C001259E2 /* KakaoAuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B34AD28A8D88C001259E2 /* KakaoAuthVM.swift */; };
+		5AA7E3F428BCF6F80073E478 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 5AA7E3F328BCF6F80073E478 /* GoogleSignIn */; };
+		5AA7E3F628BCF6F80073E478 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5AA7E3F528BCF6F80073E478 /* GoogleSignInSwift */; };
 		5AA9B7F428B45C85009BD39F /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9B7F128B45C85009BD39F /* ApiClient.swift */; };
 		5AA9B7F528B45C85009BD39F /* TodoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9B7F228B45C85009BD39F /* TodoResponse.swift */; };
 		5AA9B7F628B45C85009BD39F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9B7F328B45C85009BD39F /* API.swift */; };
@@ -53,6 +55,8 @@
 			files = (
 				5A9B349328A8D22F001259E2 /* KakaoSDK in Frameworks */,
 				5A9B34A128A8D22F001259E2 /* KakaoSDKTalk in Frameworks */,
+				5AA7E3F428BCF6F80073E478 /* GoogleSignIn in Frameworks */,
+				5AA7E3F628BCF6F80073E478 /* GoogleSignInSwift in Frameworks */,
 				5A9B349928A8D22F001259E2 /* KakaoSDKCommonCore in Frameworks */,
 				5A9B349B28A8D22F001259E2 /* KakaoSDKNavi in Frameworks */,
 				5A9B349F28A8D22F001259E2 /* KakaoSDKStory in Frameworks */,
@@ -137,6 +141,8 @@
 				5A9B34A028A8D22F001259E2 /* KakaoSDKTalk */,
 				5A9B34A228A8D22F001259E2 /* KakaoSDKTemplate */,
 				5A9B34A428A8D22F001259E2 /* KakaoSDKUser */,
+				5AA7E3F328BCF6F80073E478 /* GoogleSignIn */,
+				5AA7E3F528BCF6F80073E478 /* GoogleSignInSwift */,
 			);
 			productName = "kakao-login-tutorial";
 			productReference = 5A9B348028A8D205001259E2 /* kakao-login-tutorial.app */;
@@ -157,7 +163,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5A9B347B28A8D205001259E2 /* Build configuration list for PBXProject "kakao-login-tutorial" */;
+			buildConfigurationList = 5A9B347B28A8D205001259E2 /* Build configuration list for PBXProject "Volumme" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -168,6 +174,7 @@
 			mainGroup = 5A9B347728A8D205001259E2;
 			packageReferences = (
 				5A9B349128A8D22F001259E2 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				5AA7E3F228BCF6F80073E478 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 5A9B348128A8D205001259E2 /* Products */;
 			projectDirPath = "";
@@ -391,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A9B347B28A8D205001259E2 /* Build configuration list for PBXProject "kakao-login-tutorial" */ = {
+		5A9B347B28A8D205001259E2 /* Build configuration list for PBXProject "Volumme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A9B348C28A8D206001259E2 /* Debug */,
@@ -417,6 +424,14 @@
 			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
 			requirement = {
 				branch = master;
+				kind = branch;
+			};
+		};
+		5AA7E3F228BCF6F80073E478 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
 				kind = branch;
 			};
 		};
@@ -472,6 +487,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5A9B349128A8D22F001259E2 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
 			productName = KakaoSDKUser;
+		};
+		5AA7E3F328BCF6F80073E478 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AA7E3F228BCF6F80073E478 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		5AA7E3F528BCF6F80073E478 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AA7E3F228BCF6F80073E478 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -11,6 +11,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>naverlogin</string>
 				<string>kakao$(KAKAO_NATIVE_APP_KEY)</string>
 			</array>
 		</dict>
@@ -22,12 +23,16 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<false/>
 	</dict>
-    <key>LSApplicationQueriesSchemes</key>
-      <array>
-          <!-- 카카오톡으로 로그인 -->
-          <string>kakaokompassauth</string>
-          <!-- 카카오톡 공유 -->
-          <string>kakaolink</string>
-      </array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>naversearchthirdlogin
+
+naversearchthirdlogin
+
+</string>
+		<string>naversearchapp</string>
+		<string>kakaokompassauth</string>
+		<string>kakaolink</string>
+	</array>
 </dict>
 </plist>
